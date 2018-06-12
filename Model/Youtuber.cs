@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Model
-{  [Serializable]
+{  
+    
    public class Youtuber
     {
         private string Nome;
@@ -63,9 +64,9 @@ namespace Model
         {
             this.Nacionalidade = nacionalidade;
         }
-        public void SetQuantidadeDeVideos(long quantidadevideos)
+        public void SetQuantidadeDeVideos(int quantidadevideos)
         {
-            this.QuantidadeDeVideos = QuantidadeDeVideos;
+            this.QuantidadeDeVideos = quantidadevideos;
         }
         public void SetCategoria(string categoria)
         {

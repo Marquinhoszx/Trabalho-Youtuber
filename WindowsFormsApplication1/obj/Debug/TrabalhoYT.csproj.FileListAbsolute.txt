@@ -1,0 +1,11 @@
+C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Cadastro.resources
+C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\obj\Debug\TrabalhoYT.csproj.GenerateResource.Cache
+C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\bin\Debug\Model.dll
+C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\bin\Debug\Model.pdb
+C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\obj\Debug\TrabalhoYT.csprojResolveAssemblyReference.cache
+C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
