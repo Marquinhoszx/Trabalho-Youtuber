@@ -28,6 +28,12 @@ namespace WindowsFormsApplication1
 
         }
 
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            ListarYT listar = new ListarYT();
+            listar.ShowDialog();
+        }
+
        
         
     }

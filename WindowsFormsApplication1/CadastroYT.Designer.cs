@@ -347,7 +347,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(313, 365);
+            this.label15.Location = new System.Drawing.Point(313, 414);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(55, 13);
             this.label15.TabIndex = 33;
@@ -356,7 +356,7 @@
             // rbSimStreamer
             // 
             this.rbSimStreamer.AutoSize = true;
-            this.rbSimStreamer.Location = new System.Drawing.Point(445, 367);
+            this.rbSimStreamer.Location = new System.Drawing.Point(445, 416);
             this.rbSimStreamer.Name = "rbSimStreamer";
             this.rbSimStreamer.Size = new System.Drawing.Size(42, 17);
             this.rbSimStreamer.TabIndex = 34;
@@ -367,7 +367,7 @@
             // rbNaoStreamer
             // 
             this.rbNaoStreamer.AutoSize = true;
-            this.rbNaoStreamer.Location = new System.Drawing.Point(541, 367);
+            this.rbNaoStreamer.Location = new System.Drawing.Point(541, 416);
             this.rbNaoStreamer.Name = "rbNaoStreamer";
             this.rbNaoStreamer.Size = new System.Drawing.Size(45, 17);
             this.rbNaoStreamer.TabIndex = 35;
@@ -378,7 +378,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(313, 412);
+            this.label16.Location = new System.Drawing.Point(313, 360);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(57, 13);
             this.label16.TabIndex = 36;
@@ -386,7 +386,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(392, 412);
+            this.textBox4.Location = new System.Drawing.Point(392, 360);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(194, 20);
             this.textBox4.TabIndex = 37;
@@ -424,6 +424,7 @@
             this.btnListar.TabIndex = 40;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = false;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // Cadastro
             // 
