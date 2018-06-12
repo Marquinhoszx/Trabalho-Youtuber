@@ -66,6 +66,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeStrikes)).BeginInit();
             this.SuspendLayout();
@@ -398,11 +399,24 @@
             this.label17.TabIndex = 38;
             this.label17.Text = "(Obrigatório)";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Lime;
+            this.button1.Location = new System.Drawing.Point(609, 48);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(352, 566);
+            this.button1.TabIndex = 39;
+            this.button1.Text = "Salvar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(973, 626);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label16);
@@ -490,6 +504,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button button1;
     }
 }
 
