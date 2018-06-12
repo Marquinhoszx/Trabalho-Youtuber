@@ -68,6 +68,7 @@
             this.cbSimAnuncio = new System.Windows.Forms.CheckBox();
             this.cbNãoStreamer = new System.Windows.Forms.CheckBox();
             this.cbSimStreamer = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeStrikes)).BeginInit();
             this.SuspendLayout();
@@ -341,7 +342,7 @@
             this.btnSalvar.ForeColor = System.Drawing.Color.Lime;
             this.btnSalvar.Location = new System.Drawing.Point(102, 610);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(202, 85);
+            this.btnSalvar.Size = new System.Drawing.Size(159, 85);
             this.btnSalvar.TabIndex = 39;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
@@ -352,9 +353,9 @@
             this.btnListar.BackColor = System.Drawing.Color.Red;
             this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListar.ForeColor = System.Drawing.Color.Lime;
-            this.btnListar.Location = new System.Drawing.Point(384, 610);
+            this.btnListar.Location = new System.Drawing.Point(478, 610);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(202, 85);
+            this.btnListar.Size = new System.Drawing.Size(108, 85);
             this.btnListar.TabIndex = 40;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = false;
@@ -420,11 +421,24 @@
             this.cbSimStreamer.Text = "Sim";
             this.cbSimStreamer.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Lime;
+            this.button1.Location = new System.Drawing.Point(284, 610);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(175, 85);
+            this.button1.TabIndex = 47;
+            this.button1.Text = "Salvar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(685, 766);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cbSimStreamer);
             this.Controls.Add(this.cbNãoStreamer);
             this.Controls.Add(this.cbSimAnuncio);
@@ -467,6 +481,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Cadastro";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeStrikes)).EndInit();
             this.ResumeLayout(false);
@@ -516,6 +531,7 @@
         private System.Windows.Forms.CheckBox cbSimAnuncio;
         private System.Windows.Forms.CheckBox cbNãoStreamer;
         private System.Windows.Forms.CheckBox cbSimStreamer;
+        private System.Windows.Forms.Button button1;
     }
 }
 
