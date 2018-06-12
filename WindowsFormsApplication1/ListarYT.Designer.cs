@@ -28,55 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvListar = new System.Windows.Forms.DataGridView();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apelido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SobreNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QuantidadeDeInscritos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QuantidadeDeLikes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QuantidadeDeVizu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Renda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Link = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nacionalidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QuantidadeDeVideos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PossuiAnuncio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PossuiPatrocinio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QuantidadeDeStrikes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Plataforma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Streamer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListar)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvListar
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvListar.AllowUserToAddRows = false;
+            this.dgvListar.AllowUserToDeleteRows = false;
+            this.dgvListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nome,
             this.Apelido,
-            this.SobreNome,
             this.QuantidadeDeInscritos,
-            this.QuantidadeDeLikes,
             this.QuantidadeDeVizu,
-            this.Descricao,
-            this.Renda,
-            this.Link,
             this.Nacionalidade,
             this.QuantidadeDeVideos,
             this.Categoria,
-            this.PossuiAnuncio,
-            this.PossuiPatrocinio,
-            this.QuantidadeDeStrikes,
             this.Plataforma,
             this.Streamer});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 231);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1281, 344);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvListar.Location = new System.Drawing.Point(12, 231);
+            this.dgvListar.Name = "dgvListar";
+            this.dgvListar.ReadOnly = true;
+            this.dgvListar.Size = new System.Drawing.Size(1127, 344);
+            this.dgvListar.TabIndex = 0;
             // 
             // Nome
             // 
@@ -92,13 +78,6 @@
             this.Apelido.Name = "Apelido";
             this.Apelido.ReadOnly = true;
             // 
-            // SobreNome
-            // 
-            this.SobreNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SobreNome.HeaderText = "SobreNome";
-            this.SobreNome.Name = "SobreNome";
-            this.SobreNome.ReadOnly = true;
-            // 
             // QuantidadeDeInscritos
             // 
             this.QuantidadeDeInscritos.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -106,40 +85,12 @@
             this.QuantidadeDeInscritos.Name = "QuantidadeDeInscritos";
             this.QuantidadeDeInscritos.ReadOnly = true;
             // 
-            // QuantidadeDeLikes
-            // 
-            this.QuantidadeDeLikes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.QuantidadeDeLikes.HeaderText = "QuantidadeDeLikes";
-            this.QuantidadeDeLikes.Name = "QuantidadeDeLikes";
-            this.QuantidadeDeLikes.ReadOnly = true;
-            // 
             // QuantidadeDeVizu
             // 
             this.QuantidadeDeVizu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.QuantidadeDeVizu.HeaderText = "QuantidadeDeVizu";
             this.QuantidadeDeVizu.Name = "QuantidadeDeVizu";
             this.QuantidadeDeVizu.ReadOnly = true;
-            // 
-            // Descricao
-            // 
-            this.Descricao.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Descricao.HeaderText = "Descricao";
-            this.Descricao.Name = "Descricao";
-            this.Descricao.ReadOnly = true;
-            // 
-            // Renda
-            // 
-            this.Renda.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Renda.HeaderText = "Renda";
-            this.Renda.Name = "Renda";
-            this.Renda.ReadOnly = true;
-            // 
-            // Link
-            // 
-            this.Link.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Link.HeaderText = "Link";
-            this.Link.Name = "Link";
-            this.Link.ReadOnly = true;
             // 
             // Nacionalidade
             // 
@@ -162,27 +113,6 @@
             this.Categoria.Name = "Categoria";
             this.Categoria.ReadOnly = true;
             // 
-            // PossuiAnuncio
-            // 
-            this.PossuiAnuncio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.PossuiAnuncio.HeaderText = "PossuiAnuncio";
-            this.PossuiAnuncio.Name = "PossuiAnuncio";
-            this.PossuiAnuncio.ReadOnly = true;
-            // 
-            // PossuiPatrocinio
-            // 
-            this.PossuiPatrocinio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.PossuiPatrocinio.HeaderText = "PossuiPatrocinio";
-            this.PossuiPatrocinio.Name = "PossuiPatrocinio";
-            this.PossuiPatrocinio.ReadOnly = true;
-            // 
-            // QuantidadeDeStrikes
-            // 
-            this.QuantidadeDeStrikes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.QuantidadeDeStrikes.HeaderText = "QuantidadeDeStrikes";
-            this.QuantidadeDeStrikes.Name = "QuantidadeDeStrikes";
-            this.QuantidadeDeStrikes.ReadOnly = true;
-            // 
             // Plataforma
             // 
             this.Plataforma.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -197,39 +127,56 @@
             this.Streamer.Name = "Streamer";
             this.Streamer.ReadOnly = true;
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(933, 147);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(206, 68);
+            this.btnVoltar.TabIndex = 1;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtualizar.Location = new System.Drawing.Point(721, 147);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(206, 68);
+            this.btnAtualizar.TabIndex = 2;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            // 
             // ListarYT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1305, 611);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1155, 614);
+            this.Controls.Add(this.btnAtualizar);
+            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.dgvListar);
             this.Name = "ListarYT";
             this.Text = "ListarYT";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListar)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvListar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apelido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SobreNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn QuantidadeDeInscritos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QuantidadeDeLikes;
         private System.Windows.Forms.DataGridViewTextBoxColumn QuantidadeDeVizu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descricao;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Renda;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Link;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nacionalidade;
         private System.Windows.Forms.DataGridViewTextBoxColumn QuantidadeDeVideos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PossuiAnuncio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PossuiPatrocinio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QuantidadeDeStrikes;
         private System.Windows.Forms.DataGridViewTextBoxColumn Plataforma;
         private System.Windows.Forms.DataGridViewTextBoxColumn Streamer;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button btnAtualizar;
     }
 }

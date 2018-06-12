@@ -53,21 +53,21 @@
             this.label11 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.rbSimAnuncio = new System.Windows.Forms.RadioButton();
-            this.rbNaoAnuncio = new System.Windows.Forms.RadioButton();
             this.label13 = new System.Windows.Forms.Label();
-            this.rbSimPatrocinio = new System.Windows.Forms.RadioButton();
-            this.rbNaoPatrocinio = new System.Windows.Forms.RadioButton();
             this.label14 = new System.Windows.Forms.Label();
             this.nudQuantidadeStrikes = new System.Windows.Forms.NumericUpDown();
             this.label15 = new System.Windows.Forms.Label();
-            this.rbSimStreamer = new System.Windows.Forms.RadioButton();
-            this.rbNaoStreamer = new System.Windows.Forms.RadioButton();
             this.label16 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
+            this.cbSimPatrocinador = new System.Windows.Forms.CheckBox();
+            this.cbNaoPatrocinador = new System.Windows.Forms.CheckBox();
+            this.cbNaoAnuncio = new System.Windows.Forms.CheckBox();
+            this.cbSimAnuncio = new System.Windows.Forms.CheckBox();
+            this.cbNãoStreamer = new System.Windows.Forms.CheckBox();
+            this.cbSimStreamer = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeStrikes)).BeginInit();
             this.SuspendLayout();
@@ -275,28 +275,6 @@
             this.label12.TabIndex = 25;
             this.label12.Text = "Possui anûncio?";
             // 
-            // rbSimAnuncio
-            // 
-            this.rbSimAnuncio.AutoSize = true;
-            this.rbSimAnuncio.Location = new System.Drawing.Point(445, 319);
-            this.rbSimAnuncio.Name = "rbSimAnuncio";
-            this.rbSimAnuncio.Size = new System.Drawing.Size(42, 17);
-            this.rbSimAnuncio.TabIndex = 26;
-            this.rbSimAnuncio.TabStop = true;
-            this.rbSimAnuncio.Text = "Sim";
-            this.rbSimAnuncio.UseVisualStyleBackColor = true;
-            // 
-            // rbNaoAnuncio
-            // 
-            this.rbNaoAnuncio.AutoSize = true;
-            this.rbNaoAnuncio.Location = new System.Drawing.Point(541, 321);
-            this.rbNaoAnuncio.Name = "rbNaoAnuncio";
-            this.rbNaoAnuncio.Size = new System.Drawing.Size(45, 17);
-            this.rbNaoAnuncio.TabIndex = 27;
-            this.rbNaoAnuncio.TabStop = true;
-            this.rbNaoAnuncio.Text = "Não";
-            this.rbNaoAnuncio.UseVisualStyleBackColor = true;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -305,28 +283,6 @@
             this.label13.Size = new System.Drawing.Size(70, 13);
             this.label13.TabIndex = 28;
             this.label13.Text = "Patrocinado?";
-            // 
-            // rbSimPatrocinio
-            // 
-            this.rbSimPatrocinio.AutoSize = true;
-            this.rbSimPatrocinio.Location = new System.Drawing.Point(140, 363);
-            this.rbSimPatrocinio.Name = "rbSimPatrocinio";
-            this.rbSimPatrocinio.Size = new System.Drawing.Size(42, 17);
-            this.rbSimPatrocinio.TabIndex = 29;
-            this.rbSimPatrocinio.TabStop = true;
-            this.rbSimPatrocinio.Text = "Sim";
-            this.rbSimPatrocinio.UseVisualStyleBackColor = true;
-            // 
-            // rbNaoPatrocinio
-            // 
-            this.rbNaoPatrocinio.AutoSize = true;
-            this.rbNaoPatrocinio.Location = new System.Drawing.Point(220, 363);
-            this.rbNaoPatrocinio.Name = "rbNaoPatrocinio";
-            this.rbNaoPatrocinio.Size = new System.Drawing.Size(45, 17);
-            this.rbNaoPatrocinio.TabIndex = 30;
-            this.rbNaoPatrocinio.TabStop = true;
-            this.rbNaoPatrocinio.Text = "Não";
-            this.rbNaoPatrocinio.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
@@ -352,28 +308,6 @@
             this.label15.Size = new System.Drawing.Size(55, 13);
             this.label15.TabIndex = 33;
             this.label15.Text = "Streamer?";
-            // 
-            // rbSimStreamer
-            // 
-            this.rbSimStreamer.AutoSize = true;
-            this.rbSimStreamer.Location = new System.Drawing.Point(445, 416);
-            this.rbSimStreamer.Name = "rbSimStreamer";
-            this.rbSimStreamer.Size = new System.Drawing.Size(42, 17);
-            this.rbSimStreamer.TabIndex = 34;
-            this.rbSimStreamer.TabStop = true;
-            this.rbSimStreamer.Text = "Sim";
-            this.rbSimStreamer.UseVisualStyleBackColor = true;
-            // 
-            // rbNaoStreamer
-            // 
-            this.rbNaoStreamer.AutoSize = true;
-            this.rbNaoStreamer.Location = new System.Drawing.Point(541, 416);
-            this.rbNaoStreamer.Name = "rbNaoStreamer";
-            this.rbNaoStreamer.Size = new System.Drawing.Size(45, 17);
-            this.rbNaoStreamer.TabIndex = 35;
-            this.rbNaoStreamer.TabStop = true;
-            this.rbNaoStreamer.Text = "Não";
-            this.rbNaoStreamer.UseVisualStyleBackColor = true;
             // 
             // label16
             // 
@@ -426,26 +360,86 @@
             this.btnListar.UseVisualStyleBackColor = false;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
+            // cbSimPatrocinador
+            // 
+            this.cbSimPatrocinador.AutoSize = true;
+            this.cbSimPatrocinador.Location = new System.Drawing.Point(102, 360);
+            this.cbSimPatrocinador.Name = "cbSimPatrocinador";
+            this.cbSimPatrocinador.Size = new System.Drawing.Size(43, 17);
+            this.cbSimPatrocinador.TabIndex = 41;
+            this.cbSimPatrocinador.Text = "Sim";
+            this.cbSimPatrocinador.UseVisualStyleBackColor = true;
+            // 
+            // cbNaoPatrocinador
+            // 
+            this.cbNaoPatrocinador.AutoSize = true;
+            this.cbNaoPatrocinador.Location = new System.Drawing.Point(202, 359);
+            this.cbNaoPatrocinador.Name = "cbNaoPatrocinador";
+            this.cbNaoPatrocinador.Size = new System.Drawing.Size(46, 17);
+            this.cbNaoPatrocinador.TabIndex = 42;
+            this.cbNaoPatrocinador.Text = "Não";
+            this.cbNaoPatrocinador.UseVisualStyleBackColor = true;
+            // 
+            // cbNaoAnuncio
+            // 
+            this.cbNaoAnuncio.AutoSize = true;
+            this.cbNaoAnuncio.Location = new System.Drawing.Point(506, 321);
+            this.cbNaoAnuncio.Name = "cbNaoAnuncio";
+            this.cbNaoAnuncio.Size = new System.Drawing.Size(46, 17);
+            this.cbNaoAnuncio.TabIndex = 43;
+            this.cbNaoAnuncio.Text = "Não";
+            this.cbNaoAnuncio.UseVisualStyleBackColor = true;
+            // 
+            // cbSimAnuncio
+            // 
+            this.cbSimAnuncio.AutoSize = true;
+            this.cbSimAnuncio.Location = new System.Drawing.Point(409, 321);
+            this.cbSimAnuncio.Name = "cbSimAnuncio";
+            this.cbSimAnuncio.Size = new System.Drawing.Size(43, 17);
+            this.cbSimAnuncio.TabIndex = 44;
+            this.cbSimAnuncio.Text = "Sim";
+            this.cbSimAnuncio.UseVisualStyleBackColor = true;
+            // 
+            // cbNãoStreamer
+            // 
+            this.cbNãoStreamer.AutoSize = true;
+            this.cbNãoStreamer.Location = new System.Drawing.Point(506, 413);
+            this.cbNãoStreamer.Name = "cbNãoStreamer";
+            this.cbNãoStreamer.Size = new System.Drawing.Size(46, 17);
+            this.cbNãoStreamer.TabIndex = 45;
+            this.cbNãoStreamer.Text = "Não";
+            this.cbNãoStreamer.UseVisualStyleBackColor = true;
+            // 
+            // cbSimStreamer
+            // 
+            this.cbSimStreamer.AutoSize = true;
+            this.cbSimStreamer.Location = new System.Drawing.Point(409, 410);
+            this.cbSimStreamer.Name = "cbSimStreamer";
+            this.cbSimStreamer.Size = new System.Drawing.Size(43, 17);
+            this.cbSimStreamer.TabIndex = 46;
+            this.cbSimStreamer.Text = "Sim";
+            this.cbSimStreamer.UseVisualStyleBackColor = true;
+            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(685, 766);
+            this.Controls.Add(this.cbSimStreamer);
+            this.Controls.Add(this.cbNãoStreamer);
+            this.Controls.Add(this.cbSimAnuncio);
+            this.Controls.Add(this.cbNaoAnuncio);
+            this.Controls.Add(this.cbNaoPatrocinador);
+            this.Controls.Add(this.cbSimPatrocinador);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.rbNaoStreamer);
-            this.Controls.Add(this.rbSimStreamer);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.nudQuantidadeStrikes);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.rbNaoPatrocinio);
-            this.Controls.Add(this.rbSimPatrocinio);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.rbNaoAnuncio);
-            this.Controls.Add(this.rbSimAnuncio);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label11);
@@ -507,21 +501,21 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.RadioButton rbSimAnuncio;
-        private System.Windows.Forms.RadioButton rbNaoAnuncio;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.RadioButton rbSimPatrocinio;
-        private System.Windows.Forms.RadioButton rbNaoPatrocinio;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.NumericUpDown nudQuantidadeStrikes;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.RadioButton rbSimStreamer;
-        private System.Windows.Forms.RadioButton rbNaoStreamer;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnListar;
+        private System.Windows.Forms.CheckBox cbSimPatrocinador;
+        private System.Windows.Forms.CheckBox cbNaoPatrocinador;
+        private System.Windows.Forms.CheckBox cbNaoAnuncio;
+        private System.Windows.Forms.CheckBox cbSimAnuncio;
+        private System.Windows.Forms.CheckBox cbNãoStreamer;
+        private System.Windows.Forms.CheckBox cbSimStreamer;
     }
 }
 
