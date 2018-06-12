@@ -66,7 +66,8 @@
             this.label16 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnListar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeStrikes)).BeginInit();
             this.SuspendLayout();
@@ -399,24 +400,38 @@
             this.label17.TabIndex = 38;
             this.label17.Text = "(Obrigatório)";
             // 
-            // button1
+            // btnSalvar
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(609, 48);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(352, 566);
-            this.button1.TabIndex = 39;
-            this.button1.Text = "Salvar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSalvar.BackColor = System.Drawing.Color.Red;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.Color.Lime;
+            this.btnSalvar.Location = new System.Drawing.Point(102, 610);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(202, 85);
+            this.btnSalvar.TabIndex = 39;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnListar
+            // 
+            this.btnListar.BackColor = System.Drawing.Color.Red;
+            this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListar.ForeColor = System.Drawing.Color.Lime;
+            this.btnListar.Location = new System.Drawing.Point(384, 610);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(202, 85);
+            this.btnListar.TabIndex = 40;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = false;
             // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(973, 626);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(685, 766);
+            this.Controls.Add(this.btnListar);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label16);
@@ -504,7 +519,8 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnListar;
     }
 }
 
