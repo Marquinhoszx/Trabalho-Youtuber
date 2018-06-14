@@ -51,7 +51,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCategoria = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -60,7 +60,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnSalvar1 = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
             this.cbSimPatrocinador = new System.Windows.Forms.CheckBox();
             this.cbNaoPatrocinador = new System.Windows.Forms.CheckBox();
@@ -260,12 +260,12 @@
             this.label11.TabIndex = 23;
             this.label11.Text = "Categoria";
             // 
-            // textBox2
+            // txtCategoria
             // 
-            this.textBox2.Location = new System.Drawing.Point(102, 318);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 20);
-            this.textBox2.TabIndex = 24;
+            this.txtCategoria.Location = new System.Drawing.Point(102, 318);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.Size = new System.Drawing.Size(180, 20);
+            this.txtCategoria.TabIndex = 24;
             // 
             // label12
             // 
@@ -335,18 +335,18 @@
             this.label17.TabIndex = 38;
             this.label17.Text = "(Obrigatório)";
             // 
-            // btnSalvar
+            // btnSalvar1
             // 
-            this.btnSalvar.BackColor = System.Drawing.Color.Red;
-            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.ForeColor = System.Drawing.Color.Lime;
-            this.btnSalvar.Location = new System.Drawing.Point(102, 610);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(159, 85);
-            this.btnSalvar.TabIndex = 39;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = false;
-            this.btnSalvar.Click += new System.EventHandler(this.button1_Click);
+            this.btnSalvar1.BackColor = System.Drawing.Color.Red;
+            this.btnSalvar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar1.ForeColor = System.Drawing.Color.Lime;
+            this.btnSalvar1.Location = new System.Drawing.Point(102, 610);
+            this.btnSalvar1.Name = "btnSalvar1";
+            this.btnSalvar1.Size = new System.Drawing.Size(159, 85);
+            this.btnSalvar1.TabIndex = 39;
+            this.btnSalvar1.Text = "Salvar";
+            this.btnSalvar1.UseVisualStyleBackColor = false;
+            this.btnSalvar1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnListar
             // 
@@ -432,6 +432,7 @@
             this.button1.TabIndex = 47;
             this.button1.Text = "Salvar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Cadastro
             // 
@@ -446,7 +447,7 @@
             this.Controls.Add(this.cbNaoPatrocinador);
             this.Controls.Add(this.cbSimPatrocinador);
             this.Controls.Add(this.btnListar);
-            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.btnSalvar1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label16);
@@ -455,7 +456,7 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCategoria);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label10);
@@ -514,7 +515,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
@@ -523,7 +524,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnSalvar1;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.CheckBox cbSimPatrocinador;
         private System.Windows.Forms.CheckBox cbNaoPatrocinador;

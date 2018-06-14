@@ -11,6 +11,7 @@ namespace Model
     {
         private string Nome;
         private string Apelido;
+        private string Sobrenome;
         private int QuantidadeDeInscritos;
         private int QuantidadeDeLikes;
         private long QuantidadeDeViews;
@@ -35,6 +36,10 @@ namespace Model
         public void SetApelido(string apelido)
         {
             this.Apelido = apelido;
+        }
+        public void SetSobrenome(string sobrenome)
+        {
+            this.Sobrenome = sobrenome;
         }
         public void SetQuantidadeDeInscritos(int quantidadedeinscritos)
         {
@@ -97,6 +102,7 @@ namespace Model
 
         public string GetNome() { return Nome; }
         public string GetApelido() { return Apelido; }
+        public string GetSobrenome() { return Sobrenome; }
         public int GetQuantidadeDeInscritos() { return QuantidadeDeInscritos; }
         public int GetQuantidadeDeLikes() { return QuantidadeDeLikes; }
         public long GetQuantidadeDeViews() { return QuantidadeDeViews; }
