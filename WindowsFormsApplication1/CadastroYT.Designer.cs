@@ -510,6 +510,7 @@
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Activated += new System.EventHandler(this.Cadastro_Activated);
+            this.DoubleClick += new System.EventHandler(this.Cadastro_DoubleClick);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Cadastro_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeDeVideos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeStrikes)).EndInit();

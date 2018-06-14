@@ -209,7 +209,7 @@ namespace WindowsFormsApplication1
         {
             YoutuberRepository youtubers = new YoutuberRepository();
             dgvListar.Rows.Clear();
-            foreach (Youtuber youtuber in tudo.ObterPersonagem())
+            foreach (Youtuber youtuber in youtubers.ObterPersonagem())
             {
                 dgvListar.Rows.Add(new Object[]{
                 youtuber.GetNome(),
@@ -308,6 +308,11 @@ namespace WindowsFormsApplication1
                     txtPlataforma.Text = youtuber.GetPlataforma();
                 }
             }
+        }
+
+        private void Cadastro_DoubleClick(object sender, EventArgs e)
+        {
+            EditarYoutuber();
         }
 
         
