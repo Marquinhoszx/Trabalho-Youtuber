@@ -28,38 +28,83 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        
+
+        private void button1_Click_2(object sender, EventArgs e)
         {
+            Youtuber youtuber = new Youtuber();
             try
             {
-
-                Youtuber youtuber = new Youtuber();
                 youtuber.SetNome(txtNome.Text);
-                youtuber.SetApelido(txtApelido.Text);
-                youtuber.SetSobrenome(textBox1.Text);
-                youtuber.SetQuantidadeDeInscritos(Convert.ToInt32(txtTotalInscritos.Text));
-                youtuber.SetQuantidadeDeLikes(Convert.ToInt32(txtQuantidadeDeLikes.Text));
-                youtuber.SetQuantidadeDeViews(Convert.ToInt64(txtQuantidadeDeViews.Text));
-                youtuber.SetDescricao(textBox3.Text);
-                youtuber.SetRenda(Convert.ToInt64(txtRenda.Text));
-                youtuber.SetLink(txtLink.Text);
-                youtuber.SetNacionalidade(txtNacionalidade.Text);
-                youtuber.SetQuantidadeDeVideos(Convert.ToInt32(numericUpDown1.Value));
-                youtuber.SetCategoria(txtCategoria.Text);
-                youtuber.SetAnuncio(Convert.ToBoolean(cbSimAnuncio.Text));
-                youtuber.SetAnuncio(Convert.ToBoolean(cbNaoAnuncio.Text));
-                youtuber.SetPatrocinador(Convert.ToBoolean(cbSimAnuncio.Text));
-                youtuber.SetPatrocinador(Convert.ToBoolean(cbNaoPatrocinador.Text));
-                youtuber.SetQuantidadeStrikes(Convert.ToInt32(nudQuantidadeStrikes.Value));
-                youtuber.SetStreamer(Convert.ToBoolean(cbSimStreamer.Text));
-                youtuber.SetStreamer(Convert.ToBoolean(cbNãoStreamer.Text));
-
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                return;
             }
+            try
+            {
+                if (cbSimAnuncio.Checked)
+                {
+                    youtuber.SetAnuncio(true);
+                }
+                else
+                {
+                    youtuber.SetAnuncio(false);
+                }
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+            
+
+            
+
+
+
+
+
+
+
+
+
+
+
+            //try
+            //{
+
+            //    Youtuber youtuber = new Youtuber();
+            //    youtuber.SetNome(txtNome.Text);
+            //    youtuber.SetApelido(txtApelido.Text);
+            //    youtuber.SetSobrenome(textBox1.Text);
+            //    youtuber.SetQuantidadeDeInscritos(Convert.ToInt32(txtTotalInscritos.Text));
+            //    youtuber.SetQuantidadeDeLikes(Convert.ToInt32(txtQuantidadeDeLikes.Text));
+            //    youtuber.SetQuantidadeDeViews(Convert.ToInt64(txtQuantidadeDeViews.Text));
+            //    youtuber.SetDescricao(textBox3.Text);
+            //    youtuber.SetRenda(Convert.ToInt64(txtRenda.Text));
+            //    youtuber.SetLink(txtLink.Text);
+            //    youtuber.SetNacionalidade(txtNacionalidade.Text);
+            //    youtuber.SetQuantidadeDeVideos(Convert.ToInt32(numericUpDown1.Value));
+            //    youtuber.SetCategoria(txtCategoria.Text);
+            //    youtuber.SetAnuncio(Convert.ToBoolean(cbSimAnuncio.Text));
+            //    youtuber.SetAnuncio(Convert.ToBoolean(cbNaoAnuncio.Text));
+            //    youtuber.SetPatrocinador(Convert.ToBoolean(cbSimAnuncio.Text));
+            //    youtuber.SetPatrocinador(Convert.ToBoolean(cbNaoPatrocinador.Text));
+            //    youtuber.SetQuantidadeStrikes(Convert.ToInt32(nudQuantidadeStrikes.Value));
+            //    youtuber.SetStreamer(Convert.ToBoolean(cbSimStreamer.Text));
+            //    youtuber.SetStreamer(Convert.ToBoolean(cbNãoStreamer.Text));
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
         }
+
+        
+
 
 
 

@@ -429,6 +429,7 @@
             this.button1.TabIndex = 47;
             this.button1.Text = "Salvar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // dgvListar
             // 
@@ -563,6 +564,7 @@
             this.Name = "Cadastro";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+           
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeStrikes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListar)).EndInit();
