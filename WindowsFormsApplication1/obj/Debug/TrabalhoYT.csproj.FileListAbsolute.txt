@@ -9,4 +9,3 @@ C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\bin\Deb
 C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\obj\Debug\TrabalhoYT.csprojResolveAssemblyReference.cache
 C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
-C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ListarYT.resources

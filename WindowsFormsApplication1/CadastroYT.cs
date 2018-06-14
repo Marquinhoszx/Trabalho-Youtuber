@@ -28,12 +28,6 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void btnListar_Click(object sender, EventArgs e)
-        {
-            ListarYT listar = new ListarYT();
-            listar.ShowDialog();
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             try
@@ -61,22 +55,26 @@ namespace WindowsFormsApplication1
                 youtuber.SetStreamer(Convert.ToBoolean(cbNãoStreamer.Text));
 
             }
-            catch(Exception e)
+            catch (Exception ex)
             {
-                MessageBox.Show(e.Message);
+                MessageBox.Show(ex.Message);
             }
-
-
-
-
-
-
-
         }
 
-      
 
-       
+
+
+
+
+
+
+
+
         
+
+
+
+
+
     }
 }

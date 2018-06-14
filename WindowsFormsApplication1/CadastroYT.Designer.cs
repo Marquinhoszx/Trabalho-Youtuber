@@ -61,7 +61,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.btnSalvar1 = new System.Windows.Forms.Button();
-            this.btnListar = new System.Windows.Forms.Button();
             this.cbSimPatrocinador = new System.Windows.Forms.CheckBox();
             this.cbNaoPatrocinador = new System.Windows.Forms.CheckBox();
             this.cbNaoAnuncio = new System.Windows.Forms.CheckBox();
@@ -69,8 +68,19 @@
             this.cbNãoStreamer = new System.Windows.Forms.CheckBox();
             this.cbSimStreamer = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.dgvListar = new System.Windows.Forms.DataGridView();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apelido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QuantidadeDeInscritos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QuantidadeDeVizu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nacionalidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QuantidadeDeVideos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Plataforma = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Streamer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeStrikes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -86,7 +96,7 @@
             // 
             this.txtNome.Location = new System.Drawing.Point(102, 48);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(484, 20);
+            this.txtNome.Size = new System.Drawing.Size(427, 20);
             this.txtNome.TabIndex = 1;
             // 
             // txtApelido
@@ -108,7 +118,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(325, 91);
+            this.label3.Location = new System.Drawing.Point(288, 91);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 4;
@@ -116,9 +126,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(392, 88);
+            this.textBox1.Location = new System.Drawing.Point(355, 88);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
+            this.textBox1.Size = new System.Drawing.Size(174, 20);
             this.textBox1.TabIndex = 5;
             // 
             // label4
@@ -141,7 +151,7 @@
             // 
             this.txtQuantidadeDeLikes.Location = new System.Drawing.Point(392, 135);
             this.txtQuantidadeDeLikes.Name = "txtQuantidadeDeLikes";
-            this.txtQuantidadeDeLikes.Size = new System.Drawing.Size(194, 20);
+            this.txtQuantidadeDeLikes.Size = new System.Drawing.Size(137, 20);
             this.txtQuantidadeDeLikes.TabIndex = 8;
             // 
             // label5
@@ -166,7 +176,7 @@
             // 
             this.txtQuantidadeDeViews.Location = new System.Drawing.Point(392, 183);
             this.txtQuantidadeDeViews.Name = "txtQuantidadeDeViews";
-            this.txtQuantidadeDeViews.Size = new System.Drawing.Size(194, 20);
+            this.txtQuantidadeDeViews.Size = new System.Drawing.Size(137, 20);
             this.txtQuantidadeDeViews.TabIndex = 11;
             // 
             // textBox3
@@ -174,7 +184,7 @@
             this.textBox3.Location = new System.Drawing.Point(102, 458);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(484, 146);
+            this.textBox3.Size = new System.Drawing.Size(427, 146);
             this.textBox3.TabIndex = 12;
             // 
             // label7
@@ -216,7 +226,7 @@
             // 
             this.txtLink.Location = new System.Drawing.Point(102, 225);
             this.txtLink.Name = "txtLink";
-            this.txtLink.Size = new System.Drawing.Size(484, 20);
+            this.txtLink.Size = new System.Drawing.Size(427, 20);
             this.txtLink.TabIndex = 17;
             // 
             // label
@@ -248,7 +258,7 @@
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(409, 273);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(177, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown1.TabIndex = 22;
             // 
             // label11
@@ -304,7 +314,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(313, 414);
+            this.label15.Location = new System.Drawing.Point(281, 415);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(55, 13);
             this.label15.TabIndex = 33;
@@ -313,7 +323,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(313, 360);
+            this.label16.Location = new System.Drawing.Point(269, 361);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(57, 13);
             this.label16.TabIndex = 36;
@@ -321,7 +331,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(392, 360);
+            this.textBox4.Location = new System.Drawing.Point(335, 363);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(194, 20);
             this.textBox4.TabIndex = 37;
@@ -348,19 +358,6 @@
             this.btnSalvar1.UseVisualStyleBackColor = false;
             this.btnSalvar1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnListar
-            // 
-            this.btnListar.BackColor = System.Drawing.Color.Red;
-            this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListar.ForeColor = System.Drawing.Color.Lime;
-            this.btnListar.Location = new System.Drawing.Point(478, 610);
-            this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(108, 85);
-            this.btnListar.TabIndex = 40;
-            this.btnListar.Text = "Listar";
-            this.btnListar.UseVisualStyleBackColor = false;
-            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
-            // 
             // cbSimPatrocinador
             // 
             this.cbSimPatrocinador.AutoSize = true;
@@ -384,7 +381,7 @@
             // cbNaoAnuncio
             // 
             this.cbNaoAnuncio.AutoSize = true;
-            this.cbNaoAnuncio.Location = new System.Drawing.Point(506, 321);
+            this.cbNaoAnuncio.Location = new System.Drawing.Point(483, 321);
             this.cbNaoAnuncio.Name = "cbNaoAnuncio";
             this.cbNaoAnuncio.Size = new System.Drawing.Size(46, 17);
             this.cbNaoAnuncio.TabIndex = 43;
@@ -404,7 +401,7 @@
             // cbNãoStreamer
             // 
             this.cbNãoStreamer.AutoSize = true;
-            this.cbNãoStreamer.Location = new System.Drawing.Point(506, 413);
+            this.cbNãoStreamer.Location = new System.Drawing.Point(483, 416);
             this.cbNãoStreamer.Name = "cbNãoStreamer";
             this.cbNãoStreamer.Size = new System.Drawing.Size(46, 17);
             this.cbNãoStreamer.TabIndex = 45;
@@ -414,7 +411,7 @@
             // cbSimStreamer
             // 
             this.cbSimStreamer.AutoSize = true;
-            this.cbSimStreamer.Location = new System.Drawing.Point(409, 410);
+            this.cbSimStreamer.Location = new System.Drawing.Point(372, 414);
             this.cbSimStreamer.Name = "cbSimStreamer";
             this.cbSimStreamer.Size = new System.Drawing.Size(43, 17);
             this.cbSimStreamer.TabIndex = 46;
@@ -426,19 +423,103 @@
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(284, 610);
+            this.button1.Location = new System.Drawing.Point(372, 610);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 85);
+            this.button1.Size = new System.Drawing.Size(157, 85);
             this.button1.TabIndex = 47;
             this.button1.Text = "Salvar";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // dgvListar
+            // 
+            this.dgvListar.AllowUserToAddRows = false;
+            this.dgvListar.AllowUserToDeleteRows = false;
+            this.dgvListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nome,
+            this.Apelido,
+            this.QuantidadeDeInscritos,
+            this.QuantidadeDeVizu,
+            this.Nacionalidade,
+            this.QuantidadeDeVideos,
+            this.Categoria,
+            this.Plataforma,
+            this.Streamer});
+            this.dgvListar.Location = new System.Drawing.Point(535, 186);
+            this.dgvListar.Name = "dgvListar";
+            this.dgvListar.ReadOnly = true;
+            this.dgvListar.Size = new System.Drawing.Size(865, 344);
+            this.dgvListar.TabIndex = 48;
+            // 
+            // Nome
+            // 
+            this.Nome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
+            // 
+            // Apelido
+            // 
+            this.Apelido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Apelido.HeaderText = "Apelido";
+            this.Apelido.Name = "Apelido";
+            this.Apelido.ReadOnly = true;
+            // 
+            // QuantidadeDeInscritos
+            // 
+            this.QuantidadeDeInscritos.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.QuantidadeDeInscritos.HeaderText = "QuantidadeDeInscritos";
+            this.QuantidadeDeInscritos.Name = "QuantidadeDeInscritos";
+            this.QuantidadeDeInscritos.ReadOnly = true;
+            // 
+            // QuantidadeDeVizu
+            // 
+            this.QuantidadeDeVizu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.QuantidadeDeVizu.HeaderText = "QuantidadeDeVizu";
+            this.QuantidadeDeVizu.Name = "QuantidadeDeVizu";
+            this.QuantidadeDeVizu.ReadOnly = true;
+            // 
+            // Nacionalidade
+            // 
+            this.Nacionalidade.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Nacionalidade.HeaderText = "Nacionalidade";
+            this.Nacionalidade.Name = "Nacionalidade";
+            this.Nacionalidade.ReadOnly = true;
+            // 
+            // QuantidadeDeVideos
+            // 
+            this.QuantidadeDeVideos.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.QuantidadeDeVideos.HeaderText = "QuantidadeDeVideos";
+            this.QuantidadeDeVideos.Name = "QuantidadeDeVideos";
+            this.QuantidadeDeVideos.ReadOnly = true;
+            // 
+            // Categoria
+            // 
+            this.Categoria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.Name = "Categoria";
+            this.Categoria.ReadOnly = true;
+            // 
+            // Plataforma
+            // 
+            this.Plataforma.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Plataforma.HeaderText = "Plataforma";
+            this.Plataforma.Name = "Plataforma";
+            this.Plataforma.ReadOnly = true;
+            // 
+            // Streamer
+            // 
+            this.Streamer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Streamer.HeaderText = "Streamer";
+            this.Streamer.Name = "Streamer";
+            this.Streamer.ReadOnly = true;
             // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 766);
+            this.ClientSize = new System.Drawing.Size(1373, 771);
+            this.Controls.Add(this.dgvListar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cbSimStreamer);
             this.Controls.Add(this.cbNãoStreamer);
@@ -446,7 +527,6 @@
             this.Controls.Add(this.cbNaoAnuncio);
             this.Controls.Add(this.cbNaoPatrocinador);
             this.Controls.Add(this.cbSimPatrocinador);
-            this.Controls.Add(this.btnListar);
             this.Controls.Add(this.btnSalvar1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.textBox4);
@@ -485,6 +565,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeStrikes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -525,7 +606,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btnSalvar1;
-        private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.CheckBox cbSimPatrocinador;
         private System.Windows.Forms.CheckBox cbNaoPatrocinador;
         private System.Windows.Forms.CheckBox cbNaoAnuncio;
@@ -533,6 +613,16 @@
         private System.Windows.Forms.CheckBox cbNãoStreamer;
         private System.Windows.Forms.CheckBox cbSimStreamer;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgvListar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Apelido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QuantidadeDeInscritos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QuantidadeDeVizu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nacionalidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QuantidadeDeVideos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Plataforma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Streamer;
     }
 }
 
