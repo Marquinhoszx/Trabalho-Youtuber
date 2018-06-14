@@ -58,7 +58,7 @@
             this.nudQuantidadeStrikes = new System.Windows.Forms.NumericUpDown();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtPlataforma = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.btnSalvar1 = new System.Windows.Forms.Button();
             this.cbSimPatrocinador = new System.Windows.Forms.CheckBox();
@@ -323,12 +323,12 @@
             this.label16.TabIndex = 36;
             this.label16.Text = "Plataforma";
             // 
-            // textBox4
+            // txtPlataforma
             // 
-            this.textBox4.Location = new System.Drawing.Point(335, 363);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(194, 20);
-            this.textBox4.TabIndex = 37;
+            this.txtPlataforma.Location = new System.Drawing.Point(335, 363);
+            this.txtPlataforma.Name = "txtPlataforma";
+            this.txtPlataforma.Size = new System.Drawing.Size(194, 20);
+            this.txtPlataforma.TabIndex = 37;
             // 
             // label17
             // 
@@ -475,7 +475,7 @@
             this.Controls.Add(this.cbSimPatrocinador);
             this.Controls.Add(this.btnSalvar1);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtPlataforma);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.nudQuantidadeStrikes);
@@ -552,7 +552,7 @@
         private System.Windows.Forms.NumericUpDown nudQuantidadeStrikes;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtPlataforma;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btnSalvar1;
         private System.Windows.Forms.CheckBox cbSimPatrocinador;

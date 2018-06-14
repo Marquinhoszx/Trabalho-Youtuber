@@ -207,9 +207,9 @@ namespace WindowsFormsApplication1
 
         private void AtualizarListaYoutuber()
         {
-            YoutuberRepository youtubers = new YoutuberRepository();
+            YoutuberRepository tudo = new YoutuberRepository();
             dgvListar.Rows.Clear();
-            foreach (Youtuber youtuber in youtubers.ObterPersonagem())
+            foreach (Youtuber youtuber in tudo.ObterYoutuber())
             {
                 dgvListar.Rows.Add(new Object[]{
                 youtuber.GetNome(),
@@ -264,23 +264,23 @@ namespace WindowsFormsApplication1
             string nome = dgvListar.Rows[dgvListar.CurrentRow.Index].Cells[0].Value.ToString();
             YoutuberRepository repositorio = new YoutuberRepository();
             int quantidade = 0;
-            foreach (Youtuber youtuber in repositorio.ObterPersonagem())
+            foreach (Youtuber youtuber in repositorio.ObterYoutuber())
             {
                 if (youtuber.GetNome() == nome)
                 {
                     txtNome.Text = youtuber.GetNome();
                     txtApelido.Text = youtuber.GetApelido();
                     txtSobrenome.Text = youtuber.GetSobrenome();
-                    txtTotalInscritos.Text = youtuber.GetQuantidadeDeInscritos();
-                    txtQuantidadeDeLikes.Text = youtuber.GetQuantidadeDeInscritos();
-                    txtQuantidadeDeViews.Text = youtuber.GetQuantidadeDeViews();
+                    txtTotalInscritos.Text = Convert.ToString(youtuber.GetQuantidadeDeInscritos());
+                    txtQuantidadeDeLikes.Text =Convert.ToString( youtuber.GetQuantidadeDeInscritos());
+                    txtQuantidadeDeViews.Text =Convert.ToString( youtuber.GetQuantidadeDeViews());
                     txtDescricao.Text = youtuber.GetDescricao();
-                    txtRenda.Text = youtuber.GetRenda();
+                    txtRenda.Text = Convert.ToString(youtuber.GetRenda());
                     txtLink.Text = youtuber.GetLink();
                     txtNacionalidade.Text = youtuber.GetNacionalidade();
                     nudQuantidadeDeVideos.Value = youtuber.GetQuantidadeDeVideos();
                     txtCategoria.Text = youtuber.GetCategoria();
-                    if (youtuber.GetAnuncio)
+                    if (youtuber.GetAnuncio())
                     {
                         cbSimAnuncio.Checked = true;
                     }
@@ -288,7 +288,7 @@ namespace WindowsFormsApplication1
                     {
                         cbNaoAnuncio.Checked = false;
                     }
-                    if (youtuber.GetPatrocinador)
+                    if (youtuber.GetPatrocinador())
                     {
                         cbSimPatrocinador.Checked = true;
                     }
@@ -296,7 +296,7 @@ namespace WindowsFormsApplication1
                     {
                         cbNaoPatrocinador.Checked = false;
                     }
-                    if (youtuber.GetStreamer)
+                    if (youtuber.GetStreamer())
                     {
                         cbSimStreamer.Checked = true;
                     }

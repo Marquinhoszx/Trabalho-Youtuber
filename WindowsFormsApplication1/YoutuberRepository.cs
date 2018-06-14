@@ -23,7 +23,7 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private List<Youtuber> ObterYoutuber()
+        public List<Youtuber> ObterYoutuber()
         {
             return youtuberes;
         }
