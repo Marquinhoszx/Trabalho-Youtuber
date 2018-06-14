@@ -64,9 +64,9 @@ namespace Model
             {
                 throw new Exception("Sobrenome deve conter no mínimo 4 caracteres");
             }
-            if (sobrenome.Count() < 30)
+            if (sobrenome.Count() > 30)
             {
-                throw new Exception("Sobrenome no máximo deve conter 40 caracteres");
+                throw new Exception("Sobrenome no máximo deve conter 30 caracteres");
             }
             
             this.Sobrenome = sobrenome;

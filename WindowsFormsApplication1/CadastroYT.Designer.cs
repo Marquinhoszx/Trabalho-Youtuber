@@ -33,14 +33,14 @@
             this.txtApelido = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSobrenome = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTotalInscritos = new System.Windows.Forms.TextBox();
             this.txtQuantidadeDeLikes = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtQuantidadeDeViews = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtRenda = new System.Windows.Forms.TextBox();
@@ -49,7 +49,7 @@
             this.label = new System.Windows.Forms.Label();
             this.txtNacionalidade = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nudQuantidadeDeVideos = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.txtCategoria = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -72,7 +72,7 @@
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Canal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeDeVideos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeStrikes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListar)).BeginInit();
             this.SuspendLayout();
@@ -118,12 +118,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Sobrenome";
             // 
-            // textBox1
+            // txtSobrenome
             // 
-            this.textBox1.Location = new System.Drawing.Point(355, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtSobrenome.Location = new System.Drawing.Point(355, 88);
+            this.txtSobrenome.Name = "txtSobrenome";
+            this.txtSobrenome.Size = new System.Drawing.Size(174, 20);
+            this.txtSobrenome.TabIndex = 5;
             // 
             // label4
             // 
@@ -173,13 +173,13 @@
             this.txtQuantidadeDeViews.Size = new System.Drawing.Size(137, 20);
             this.txtQuantidadeDeViews.TabIndex = 11;
             // 
-            // textBox3
+            // txtDescricao
             // 
-            this.textBox3.Location = new System.Drawing.Point(102, 458);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(427, 146);
-            this.textBox3.TabIndex = 12;
+            this.txtDescricao.Location = new System.Drawing.Point(102, 458);
+            this.txtDescricao.Multiline = true;
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(427, 146);
+            this.txtDescricao.TabIndex = 12;
             // 
             // label7
             // 
@@ -248,12 +248,12 @@
             this.label10.TabIndex = 21;
             this.label10.Text = "Quantidade de Vídeos";
             // 
-            // numericUpDown1
+            // nudQuantidadeDeVideos
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(409, 273);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 22;
+            this.nudQuantidadeDeVideos.Location = new System.Drawing.Point(409, 273);
+            this.nudQuantidadeDeVideos.Name = "nudQuantidadeDeVideos";
+            this.nudQuantidadeDeVideos.Size = new System.Drawing.Size(120, 20);
+            this.nudQuantidadeDeVideos.TabIndex = 22;
             // 
             // label11
             // 
@@ -484,7 +484,7 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtCategoria);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.nudQuantidadeDeVideos);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtNacionalidade);
             this.Controls.Add(this.label);
@@ -493,14 +493,14 @@
             this.Controls.Add(this.txtRenda);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.txtQuantidadeDeViews);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtQuantidadeDeLikes);
             this.Controls.Add(this.txtTotalInscritos);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSobrenome);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtApelido);
@@ -509,7 +509,7 @@
             this.Name = "Cadastro";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeDeVideos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeStrikes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListar)).EndInit();
             this.ResumeLayout(false);
@@ -524,14 +524,14 @@
         private System.Windows.Forms.TextBox txtApelido;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSobrenome;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTotalInscritos;
         private System.Windows.Forms.TextBox txtQuantidadeDeLikes;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtQuantidadeDeViews;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtRenda;
@@ -540,7 +540,7 @@
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.TextBox txtNacionalidade;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nudQuantidadeDeVideos;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.Label label12;

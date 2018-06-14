@@ -52,7 +52,8 @@ namespace WindowsFormsApplication1
                 }
             }
         }
-        internal void EditarPersonagem(Youtuber youtuber, int posicao)
+        
+        internal void EditarYoutuber(Youtuber youtuber, int posicao)
         {
             youtuberes[posicao] = youtuber;
             EscreverNoArquivoDosYoutubers();

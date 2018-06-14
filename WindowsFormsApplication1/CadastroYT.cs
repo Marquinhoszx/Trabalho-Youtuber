@@ -75,11 +75,11 @@ namespace WindowsFormsApplication1
             }
             try
             {
-                youtuber.SetSobrenome(textBox1.Text);
+                youtuber.SetSobrenome(txtSobrenome.Text);
             }
-            catch
+            catch(Exception ex)
             {
-                MessageBox.Show("Sobrenome deve ser preenchido");
+                MessageBox.Show(ex.Message);
                 return;
             }
             try
@@ -111,7 +111,7 @@ namespace WindowsFormsApplication1
             }
             try
             {
-                youtuber.SetDescricao(textBox3.Text);
+                youtuber.SetDescricao(txtDescricao.Text);
             }
             catch
             {
@@ -148,7 +148,7 @@ namespace WindowsFormsApplication1
             }
             try
             {
-                youtuber.SetQuantidadeDeVideos(Convert.ToInt32(numericUpDown1.Value));
+                youtuber.SetQuantidadeDeVideos(Convert.ToInt32(nudQuantidadeDeVideos.Value));
             }
             catch
             {
@@ -189,7 +189,37 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("Youtuber alterado com sucesso");
             }
 
+            YoutuberRepository youtuberReposiitory = new YoutuberRepository();
 
+            if (posicao == -1)
+            {
+                tudo.AdicionarYoutuber(youtuber);
+                MessageBox.Show("Youtuber cadastrado com sucesso");
+            }
+            else
+            {
+                tudo.EditarYoutuber(youtuber, posicao);
+                MessageBox.Show("Youtuber alterado com sucesso");
+            }
+            LimparCampos();
+            AtualizarListaYoutube();
+        }
+
+        private void LimparCampos()
+        {
+            txtNome.Text = string.Empty;
+            txtApelido.Text = string.Empty;
+            txtSobrenome.Text = string.Empty;
+            txtTotalInscritos.Text = string.Empty;
+            txtQuantidadeDeLikes.Text = string.Empty;
+            txtQuantidadeDeViews.Text = string.Empty;
+            txtDescricao.Text = string.Empty;
+            txtRenda.Text = string.Empty;
+            txtLink.Text = string.Empty;
+            txtNacionalidade.Text = string.Empty;
+            nudQuantidadeStrikes.Value = 0;
+            nudQuantidadeDeVideos.Value = 0;
+            
         }
 
         
