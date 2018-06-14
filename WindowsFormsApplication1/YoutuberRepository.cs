@@ -58,5 +58,7 @@ namespace WindowsFormsApplication1
             youtuberes[posicao] = youtuber;
             EscreverNoArquivoDosYoutubers();
         }
+
+        
     }
 }

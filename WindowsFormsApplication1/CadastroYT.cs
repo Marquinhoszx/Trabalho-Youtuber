@@ -202,7 +202,21 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("Youtuber alterado com sucesso");
             }
             LimparCampos();
-            AtualizarListaYoutube();
+            AtualizarListaYoutuber();
+        }
+
+        private void AtualizarListaYoutuber()
+        {
+            YoutuberRepository youtubers = new YoutuberRepository();
+            dgvListar.Rows.Clear();
+            foreach (Youtuber youtuber in tudo.ObterPersonagem())
+            {
+                dgvListar.Rows.Add(new Object[]{
+                youtuber.GetNome(),
+                youtuber.GetApelido(),
+                youtuber.GetCategoria()
+                });
+            }
         }
 
         private void LimparCampos()
@@ -219,7 +233,81 @@ namespace WindowsFormsApplication1
             txtNacionalidade.Text = string.Empty;
             nudQuantidadeStrikes.Value = 0;
             nudQuantidadeDeVideos.Value = 0;
-            
+            cbNaoAnuncio.Checked = false;
+            cbNaoPatrocinador.Checked = false;
+            cbNãoStreamer.Checked = false;
+            cbSimAnuncio.Checked = false;
+            cbSimPatrocinador.Checked = false;
+            cbSimStreamer.Checked = false;
+        }
+
+        private void Cadastro_Activated(object sender, EventArgs e)
+        {
+            AtualizarListaYoutuber();
+        }
+
+        private void Cadastro_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Modifiers == Keys.Control && e.KeyCode == Keys.L)
+            {
+                EditarYoutuber();
+            }
+        }
+
+        private void EditarYoutuber()
+        {
+            if (dgvListar.CurrentRow == null)
+            {
+                MessageBox.Show("Seu zueirinho,Selecione grid para editar");
+                return;
+            }
+            string nome = dgvListar.Rows[dgvListar.CurrentRow.Index].Cells[0].Value.ToString();
+            YoutuberRepository repositorio = new YoutuberRepository();
+            int quantidade = 0;
+            foreach (Youtuber youtuber in repositorio.ObterPersonagem())
+            {
+                if (youtuber.GetNome() == nome)
+                {
+                    txtNome.Text = youtuber.GetNome();
+                    txtApelido.Text = youtuber.GetApelido();
+                    txtSobrenome.Text = youtuber.GetSobrenome();
+                    txtTotalInscritos.Text = youtuber.GetQuantidadeDeInscritos();
+                    txtQuantidadeDeLikes.Text = youtuber.GetQuantidadeDeInscritos();
+                    txtQuantidadeDeViews.Text = youtuber.GetQuantidadeDeViews();
+                    txtDescricao.Text = youtuber.GetDescricao();
+                    txtRenda.Text = youtuber.GetRenda();
+                    txtLink.Text = youtuber.GetLink();
+                    txtNacionalidade.Text = youtuber.GetNacionalidade();
+                    nudQuantidadeDeVideos.Value = youtuber.GetQuantidadeDeVideos();
+                    txtCategoria.Text = youtuber.GetCategoria();
+                    if (youtuber.GetAnuncio)
+                    {
+                        cbSimAnuncio.Checked = true;
+                    }
+                    else
+                    {
+                        cbNaoAnuncio.Checked = false;
+                    }
+                    if (youtuber.GetPatrocinador)
+                    {
+                        cbSimPatrocinador.Checked = true;
+                    }
+                    else
+                    {
+                        cbNaoPatrocinador.Checked = false;
+                    }
+                    if (youtuber.GetStreamer)
+                    {
+                        cbSimStreamer.Checked = true;
+                    }
+                    else
+                    {
+                        cbNãoStreamer.Checked = false;
+                    }
+                    nudQuantidadeStrikes.Value = youtuber.GetQuantidadesDeStrikes();
+                    txtPlataforma.Text = youtuber.GetPlataforma();
+                }
+            }
         }
 
         
