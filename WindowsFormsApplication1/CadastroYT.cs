@@ -42,6 +42,8 @@ namespace WindowsFormsApplication1
                 MessageBox.Show(ex.Message);
                 return;
             }
+
+
             try
             {
                 if (cbSimAnuncio.Checked)
@@ -53,25 +55,126 @@ namespace WindowsFormsApplication1
                     youtuber.SetAnuncio(false);
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                
-                throw;
+                MessageBox.Show(ex.Message);
+                return;
+            }
+            try
+            {
+                youtuber.SetApelido(txtApelido.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Apelido deve ser preenchido");
+                return;
+            }
+            try
+            {
+                youtuber.SetSobrenome(textBox1.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Sobrenome deve ser preenchido");
+                return;
+            }
+            try
+            {
+                youtuber.SetQuantidadeDeInscritos(Convert.ToInt32(txtTotalInscritos.Text));
+            }
+            catch
+            {
+                MessageBox.Show("Quantidade de inscritos deve ser preenchida");
+                return;
+            }
+            try
+            {
+                youtuber.SetQuantidadeDeLikes(Convert.ToInt32(txtQuantidadeDeLikes.Text));
+            }
+            catch
+            {
+                MessageBox.Show("Quantidade de likes deve ser preenchido");
+                return;
+            }
+            try
+            {
+                youtuber.SetQuantidadeDeViews(Convert.ToInt64(txtQuantidadeDeViews.Text));
+            }
+            catch
+            {
+                MessageBox.Show("Quantidade de views deve ser preenchida");
+                return;
+            }
+            try
+            {
+                youtuber.SetDescricao(textBox3.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Descricao deve ser preenchido");
+                return;
+            }
+
+            try
+            {
+                youtuber.SetRenda(Convert.ToInt64(txtRenda.Text));
+            }
+            catch
+            {
+                MessageBox.Show("Renda deve ser preenchido");
+                return;
+            }
+            try
+            {
+                youtuber.SetLink(txtLink.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Link deve ser preenchido");
+                return;
+            }
+            try
+            {
+                youtuber.SetNacionalidade(txtNacionalidade.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Nacionalidade deve ser preenchido");
+                return;
+            }
+            try
+            {
+                youtuber.SetQuantidadeDeVideos(Convert.ToInt32(numericUpDown1.Value));
+            }
+            catch
+            {
+                MessageBox.Show("Quantidade de videos deve ser preenchido");
+                return;
+            }
+
+            try
+            {
+                youtuber.SetCategoria(txtCategoria.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Categoria deve ser preenchida");
+                return;
+            }
+
+            try
+            {
+                youtuber.SetQuantidadeStrikes(Convert.ToInt32(nudQuantidadeStrikes.Value));
+            }
+            catch
+            {
+                MessageBox.Show("Quantidade De strikes deve ser preenchido");
+
             }
             
-
             
-
-
-
-
-
-
-
-
-
-
-
+            
+            
             //try
             //{
 

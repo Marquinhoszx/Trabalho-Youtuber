@@ -98,7 +98,7 @@ namespace Model
         }
         public void SetDescricao(string descricao)
         {
-            if (descricao.Count() == null)
+            if (descricao.Count() == 0)
             {
                 throw new Exception("Descrição deve ser preenchido");
             }
@@ -107,7 +107,7 @@ namespace Model
         }
         public void SetRenda(long renda)
         {
-            if (renda == null)
+            if (renda == 0)
             {
                 throw new Exception("Renda deve ser maior que 0");
             }
@@ -159,7 +159,10 @@ namespace Model
         }
         public void SetAnuncio(bool anuncio)
         {
-            
+            if (anuncio == null)
+            {
+                throw new Exception("Selecione anuncio");
+            }
             this.Anuncio = anuncio;
         }
         public void SetPatrocinador(bool patrocinador)

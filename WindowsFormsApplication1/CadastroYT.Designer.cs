@@ -70,14 +70,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.dgvListar = new System.Windows.Forms.DataGridView();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apelido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QuantidadeDeInscritos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QuantidadeDeVizu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nacionalidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QuantidadeDeVideos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Canal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Plataforma = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Streamer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeStrikes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListar)).BeginInit();
@@ -438,18 +432,12 @@
             this.dgvListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nome,
-            this.Apelido,
-            this.QuantidadeDeInscritos,
-            this.QuantidadeDeVizu,
-            this.Nacionalidade,
-            this.QuantidadeDeVideos,
-            this.Categoria,
-            this.Plataforma,
-            this.Streamer});
-            this.dgvListar.Location = new System.Drawing.Point(535, 186);
+            this.Canal,
+            this.Categoria});
+            this.dgvListar.Location = new System.Drawing.Point(560, 107);
             this.dgvListar.Name = "dgvListar";
             this.dgvListar.ReadOnly = true;
-            this.dgvListar.Size = new System.Drawing.Size(865, 344);
+            this.dgvListar.Size = new System.Drawing.Size(549, 512);
             this.dgvListar.TabIndex = 48;
             // 
             // Nome
@@ -459,40 +447,11 @@
             this.Nome.Name = "Nome";
             this.Nome.ReadOnly = true;
             // 
-            // Apelido
+            // Canal
             // 
-            this.Apelido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Apelido.HeaderText = "Apelido";
-            this.Apelido.Name = "Apelido";
-            this.Apelido.ReadOnly = true;
-            // 
-            // QuantidadeDeInscritos
-            // 
-            this.QuantidadeDeInscritos.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.QuantidadeDeInscritos.HeaderText = "QuantidadeDeInscritos";
-            this.QuantidadeDeInscritos.Name = "QuantidadeDeInscritos";
-            this.QuantidadeDeInscritos.ReadOnly = true;
-            // 
-            // QuantidadeDeVizu
-            // 
-            this.QuantidadeDeVizu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.QuantidadeDeVizu.HeaderText = "QuantidadeDeVizu";
-            this.QuantidadeDeVizu.Name = "QuantidadeDeVizu";
-            this.QuantidadeDeVizu.ReadOnly = true;
-            // 
-            // Nacionalidade
-            // 
-            this.Nacionalidade.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Nacionalidade.HeaderText = "Nacionalidade";
-            this.Nacionalidade.Name = "Nacionalidade";
-            this.Nacionalidade.ReadOnly = true;
-            // 
-            // QuantidadeDeVideos
-            // 
-            this.QuantidadeDeVideos.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.QuantidadeDeVideos.HeaderText = "QuantidadeDeVideos";
-            this.QuantidadeDeVideos.Name = "QuantidadeDeVideos";
-            this.QuantidadeDeVideos.ReadOnly = true;
+            this.Canal.HeaderText = "Canal";
+            this.Canal.Name = "Canal";
+            this.Canal.ReadOnly = true;
             // 
             // Categoria
             // 
@@ -501,25 +460,11 @@
             this.Categoria.Name = "Categoria";
             this.Categoria.ReadOnly = true;
             // 
-            // Plataforma
-            // 
-            this.Plataforma.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Plataforma.HeaderText = "Plataforma";
-            this.Plataforma.Name = "Plataforma";
-            this.Plataforma.ReadOnly = true;
-            // 
-            // Streamer
-            // 
-            this.Streamer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Streamer.HeaderText = "Streamer";
-            this.Streamer.Name = "Streamer";
-            this.Streamer.ReadOnly = true;
-            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1373, 771);
+            this.ClientSize = new System.Drawing.Size(1130, 763);
             this.Controls.Add(this.dgvListar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cbSimStreamer);
@@ -564,7 +509,6 @@
             this.Name = "Cadastro";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-           
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidadeStrikes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListar)).EndInit();
@@ -617,14 +561,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgvListar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Apelido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QuantidadeDeInscritos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QuantidadeDeVizu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nacionalidade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QuantidadeDeVideos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Canal;
         private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Plataforma;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Streamer;
     }
 }
 

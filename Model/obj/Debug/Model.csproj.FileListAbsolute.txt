@@ -3,3 +3,4 @@ C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\Model\bin\Debug\Model.dll
 C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\Model\bin\Debug\Model.pdb
 C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\Model\obj\Debug\Model.dll
 C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\Model\obj\Debug\Model.pdb
+C:\Users\i3i\Documents\GitHub\Trabalho-Youtuber\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
